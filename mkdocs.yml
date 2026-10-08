@@ -1,10 +1,10 @@
-# =============================================================================
+# ============================================================================
 #  Template de entregas — Redes Neurais Artificiais & Deep Learning
 #  Serve a qualquer edição da disciplina: https://insper.github.io/ann-dl/
 #
 #  ANTES DE PUBLICAR: troque todas as linhas marcadas com "# TROCAR" abaixo.
 #  Passo a passo em docs/template/index.md > Publicação no GitHub Pages.
-# =============================================================================
+# ============================================================================
 site_name: ANN-DL · Entregas                  # TROCAR: título exibido no topo do site
 site_author: Karyne Alencar, Matheus Braido, Renan Mello              # TROCAR: seu nome (ou os nomes do grupo)
 site_url: https://Karyne-Braido-Renan.github.io/ann-dl    # TROCAR: https://<seu-usuario>.github.io/<seu-repo>
@@ -154,7 +154,7 @@ nav:
   # O projeto é UM só, com três entregas ao longo do semestre.
   - Projeto:
     - projects/index.md
-    - 1. EDA: projects/eda/index.md
+    - 1. EDA: projects/eda/EDA_perfil_investimento.ipynb
     # Escolha UMA das duas linhas abaixo, e apague a outra (e a pasta que sobrar):
     - 2. Classificação: projects/classification/index.md
     - 2. Regressão: projects/regression/index.md
