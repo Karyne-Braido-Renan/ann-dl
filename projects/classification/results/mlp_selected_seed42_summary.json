@@ -1,0 +1,164 @@
+{
+  "experiment_id": "C01",
+  "configuration": {
+    "experiment_id": "C01",
+    "hidden_dims": [
+      32,
+      16
+    ],
+    "arquitetura": "32/16",
+    "learning_rate": 0.001,
+    "regularizacao": "Nenhuma",
+    "dropout": 0.0,
+    "weight_decay": 0.0
+  },
+  "training": {
+    "learning_rate": 0.001,
+    "batch_size": 64,
+    "max_epochs": 200,
+    "patience": 20,
+    "min_delta": 0.0,
+    "weight_decay": 0.0,
+    "seed": 42,
+    "num_threads": 1,
+    "log_every": 0
+  },
+  "n_configurations": 16,
+  "selection_metric": "f1_macro_val",
+  "seed": 42,
+  "n_train": 11402,
+  "n_val": 3801,
+  "feature_names": [
+    "num__pct_stocks",
+    "num__pct_fixed_income",
+    "num__pct_repo",
+    "num__pct_investment_fund",
+    "num__pct_cash",
+    "num__pct_options",
+    "num__pct_treasure",
+    "num__pct_private_pension",
+    "num__pct_term",
+    "num__pct_coe",
+    "num__pct_real_estate",
+    "num__pct_structured_product",
+    "num__num_active_buckets",
+    "num__max_bucket_pct",
+    "cat__personType_F",
+    "cat__personType_J"
+  ],
+  "class_labels": [
+    "Conservadora",
+    "Moderada",
+    "Sofisticada"
+  ],
+  "class_weights": [
+    0.7718656659126282,
+    0.6314448714256287,
+    8.280319213867188
+  ],
+  "n_parameters": 1123,
+  "best_epoch": 29,
+  "epochs_run": 49,
+  "val_f1_macro": 0.3828876246635297,
+  "baseline_f1_macro_val": 0.35501328062127985,
+  "mlp_target_f1_val": 0.39051460868340787,
+  "relative_gain_percent": 7.851634168014576,
+  "criterion_met_val": false,
+  "classification_report_val": {
+    "Conservadora": {
+      "precision": 0.5124617402710975,
+      "recall": 0.7137637028014616,
+      "f1-score": 0.5965894629676762,
+      "support": 1642.0
+    },
+    "Moderada": {
+      "precision": 0.6288848263254113,
+      "recall": 0.34297108673978066,
+      "f1-score": 0.44387096774193546,
+      "support": 2006.0
+    },
+    "Sofisticada": {
+      "precision": 0.07380952380952381,
+      "recall": 0.20261437908496732,
+      "f1-score": 0.1082024432809773,
+      "support": 153.0
+    },
+    "accuracy": 0.4975006577216522,
+    "macro avg": {
+      "precision": 0.4050520301353442,
+      "recall": 0.4197830562087365,
+      "f1-score": 0.3828876246635297,
+      "support": 3801.0
+    },
+    "weighted avg": {
+      "precision": 0.5562478285390092,
+      "recall": 0.4975006577216522,
+      "f1-score": 0.4963325528295807,
+      "support": 3801.0
+    }
+  },
+  "regularization_effects": {
+    "Nenhuma": {
+      "media": 0.0,
+      "minimo": 0.0,
+      "maximo": 0.0
+    },
+    "Dropout": {
+      "media": -0.029594748864876327,
+      "minimo": -0.042945419354352754,
+      "maximo": -0.016301040676405143
+    },
+    "Weight decay": {
+      "media": -0.007893686881537174,
+      "minimo": -0.021859358364167802,
+      "maximo": 0.001350307737539691
+    },
+    "Dropout + weight decay": {
+      "media": -0.02906213586687731,
+      "minimo": -0.048483243132107945,
+      "maximo": -0.015339958260325859
+    }
+  },
+  "validation_comparison": {
+    "MLP selecionada (C01)": {
+      "f1_macro_treino": 0.39286971775218743,
+      "f1_macro_val": 0.3828876246635297,
+      "diferenca_treino_val": 0.009982093088657717,
+      "acuracia_val": 0.4975006577216522,
+      "recall_sofisticada_val": 0.20261437908496732,
+      "f1_sofisticada_val": 0.1082024432809773
+    },
+    "MLP inicial — semente 42": {
+      "f1_macro_treino": 0.4032812681332549,
+      "f1_macro_val": 0.3746567416134919,
+      "diferenca_treino_val": 0.028624526519762994,
+      "acuracia_val": 0.4975006577216522,
+      "recall_sofisticada_val": 0.13071895424836602,
+      "f1_sofisticada_val": 0.07633587786259542
+    },
+    "Logística": {
+      "f1_macro_treino": 0.35085315575822346,
+      "f1_macro_val": 0.35501328062127985,
+      "diferenca_treino_val": -0.004160124863056391,
+      "acuracia_val": 0.5577479610628782,
+      "recall_sofisticada_val": 0.0,
+      "f1_sofisticada_val": 0.0
+    },
+    "Logística balanceada": {
+      "f1_macro_treino": 0.3195268751991986,
+      "f1_macro_val": 0.31018138060387573,
+      "diferenca_treino_val": 0.009345494595322856,
+      "acuracia_val": 0.40699815837937386,
+      "recall_sofisticada_val": 0.32679738562091504,
+      "f1_sofisticada_val": 0.09337068160597572
+    },
+    "Dummy majoritário": {
+      "f1_macro_treino": 0.23033503625892124,
+      "f1_macro_val": 0.2302967682681821,
+      "diferenca_treino_val": 3.8267990739138114e-05,
+      "acuracia_val": 0.5277558537227045,
+      "recall_sofisticada_val": 0.0,
+      "f1_sofisticada_val": 0.0
+    }
+  }
+}

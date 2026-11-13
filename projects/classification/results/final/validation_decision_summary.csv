@@ -1,0 +1,5 @@
+model,model_id,factors,f1_macro_argmax,f1_macro_val,conservadora_as_sofisticada
+MLP,mlp,"[1.0, 1.0, 0.75]",0.3828876246635297,0.4041601950632932,58
+Logística balanceada,logistic_balanced,"[1.0, 1.0, 0.5]",0.31018138060387573,0.3821965467251738,5
+Logística,logistic,"[1.0, 0.75, 1.0]",0.35501328062127985,0.3756459461341981,0
+Dummy majoritário,dummy,"[1.0, 1.0, 1.0]",0.2302967682681821,0.2302967682681821,0

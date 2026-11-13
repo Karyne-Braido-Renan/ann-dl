@@ -1,0 +1,94 @@
+{
+  "protocol_sha256": "5b016135cbda7d124f81074d522277469e16bea07d5a1185b34a47ee1bc1deab",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "representative_seed": 42,
+  "n_train": 15203,
+  "n_test": 3801,
+  "epochs_fixed": 29,
+  "baseline_selected_on_validation": "Logística balanceada",
+  "network_mean": {
+    "accuracy": 0.4973252652810664,
+    "f1_macro": 0.37190348766136644,
+    "roc_auc_macro_ovr": 0.5984398453067982,
+    "pr_auc_macro_trapezoidal": 0.39889278044557397,
+    "average_precision_macro": 0.3961080094474156
+  },
+  "network_sample_std": {
+    "accuracy": 0.013610442088394882,
+    "f1_macro": 0.011402074113936327,
+    "roc_auc_macro_ovr": 0.0033947329821712767,
+    "pr_auc_macro_trapezoidal": 0.0014397077735600191,
+    "average_precision_macro": 0.000970298743579382
+  },
+  "reference_baseline_test_f1": 0.3777118001039132,
+  "relative_gain_percent": -1.5377630354542315,
+  "difference_from_baseline": -0.005808312442546759,
+  "difference_greater_than_one_std": false,
+  "success_criterion_met": false,
+  "all_model_metrics": [
+    {
+      "model_id": "mlp_seed42",
+      "family": "MLP",
+      "seed": 42,
+      "accuracy": 0.48171533806892924,
+      "f1_macro": 0.35878468659368085,
+      "roc_auc_macro_ovr": 0.602237062455618,
+      "pr_auc_macro_trapezoidal": 0.400170142351617,
+      "average_precision_macro": 0.39722718955026703
+    },
+    {
+      "model_id": "mlp_seed43",
+      "family": "MLP",
+      "seed": 43,
+      "accuracy": 0.5035516969218626,
+      "f1_macro": 0.37749847748935544,
+      "roc_auc_macro_ovr": 0.5956985811302752,
+      "pr_auc_macro_trapezoidal": 0.3991755214338973,
+      "average_precision_macro": 0.3955030699215967
+    },
+    {
+      "model_id": "mlp_seed44",
+      "family": "MLP",
+      "seed": 44,
+      "accuracy": 0.5067087608524072,
+      "f1_macro": 0.379427298901063,
+      "roc_auc_macro_ovr": 0.5973838923345011,
+      "pr_auc_macro_trapezoidal": 0.3973326775512076,
+      "average_precision_macro": 0.39559376887038294
+    },
+    {
+      "model_id": "dummy",
+      "family": "Dummy majoritário",
+      "seed": null,
+      "accuracy": 0.5277558537227045,
+      "f1_macro": 0.2302967682681821,
+      "roc_auc_macro_ovr": 0.5,
+      "pr_auc_macro_trapezoidal": 0.6666666666666666,
+      "average_precision_macro": 0.3333333333333333
+    },
+    {
+      "model_id": "logistic",
+      "family": "Logística",
+      "seed": null,
+      "accuracy": 0.5453827940015785,
+      "f1_macro": 0.3643030967304777,
+      "roc_auc_macro_ovr": 0.6083629237849557,
+      "pr_auc_macro_trapezoidal": 0.40938446994664557,
+      "average_precision_macro": 0.4054513340747421
+    },
+    {
+      "model_id": "logistic_balanced",
+      "family": "Logística balanceada",
+      "seed": null,
+      "accuracy": 0.5438042620363063,
+      "f1_macro": 0.3777118001039132,
+      "roc_auc_macro_ovr": 0.5992410885963207,
+      "pr_auc_macro_trapezoidal": 0.39635698018179033,
+      "average_precision_macro": 0.3933068122497265
+    }
+  ]
+}
