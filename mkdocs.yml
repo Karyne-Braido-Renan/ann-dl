@@ -123,9 +123,16 @@ validation:
 
 # Os scripts de code/ ficam no repositório e são incluídos nos relatórios via --8<--,
 # mas não são páginas da navegação.
+# Os notebooks e textos de apoio são acessíveis por links nos relatórios.
+# Os índices de EDA e regressão também ficam fora do menu atual.
 not_in_nav: |
   /exercises/*/code/*
   /projects/*/code/*
+  /projects/classification/classification_perfil_investimento.ipynb
+  /projects/classification/experimentos_classificacao.ipynb
+  /projects/classification/conclusao_classificacao.md
+  /projects/eda/index.md
+  /projects/regression/index.md
 
 extra_javascript:
   # A configuração precisa vir ANTES da biblioteca do MathJax
@@ -156,7 +163,7 @@ nav:
     - projects/index.md
     - 1. EDA: projects/eda/EDA_perfil_investimento.ipynb
     # Escolha UMA das duas linhas abaixo, e apague a outra (e a pasta que sobrar):
-    - 2. Classificação: projects/classification/classification_perfil_investimento.ipynb
+    - 2. Classificação: projects/classification/index.md
     # A equipe escolheu classificação; a entrega de regressão não faz parte deste projeto.
     - 3. Generativo: projects/generative/index.md
 
