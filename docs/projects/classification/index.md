@@ -10,22 +10,12 @@ Este relatório documenta a classificação multiclasse de `investmentPolicy` a 
 composição observada da carteira e do tipo de pessoa. A pergunta é se uma MLP melhora a
 classificação em relação a modelos mais simples, respeitando o pipeline e o teste do EDA.
 
-O arquivo principal é o [notebook iniciado pela equipe](classification_perfil_investimento.ipynb).
-A parte inicial preserva o desenvolvimento do colega e suas saídas. A seção
-**Resultados dos experimentos adicionais** resume as tabelas e figuras já registradas.
+O arquivo principal é o [Classification Perfil](classification_perfil_investimento.ipynb).
 O [notebook de experimentos](experimentos_classificacao.ipynb) reúne a implementação,
 a busca e as verificações adicionais em células Python comuns.
-A [conclusão já escrita pela equipe](conclusao_classificacao.md) foi incorporada ao notebook.
+A [conclusão](conclusao_classificacao.md) foi incorporada ao notebook.
 O [EDA](../eda/EDA_perfil_investimento.ipynb) permanece como referência dos dados.
-A organização abaixo segue as etapas da [rubrica de classificação ou regressão, edição 2026.2](https://insper.github.io/ann-dl/pt/2026.2/projects/supervised/).
 
-!!! info "Estado da entrega"
-
-    O desenvolvimento original já inclui baselines, MLP, oito configurações, teste com três
-    sementes e erros por subgrupo. Os complementos acrescentam comparação controlada de 16
-    configurações, regras de decisão, protocolo final e curvas. Ambos mantêm seus resultados
-    registrados; nenhum atingiu o critério de sucesso adotado na sua versão. Ainda faltam
-    piores exemplos com hipóteses, importância por permutação e a síntese conjunta final.
 
 ### Integração dos dois desenvolvimentos
 
@@ -39,17 +29,11 @@ A organização abaixo segue as etapas da [rubrica de classificação ou regress
 | F1 macro no teste, média ± desvio | Aproximadamente 0,316 ± 0,021 | 0,3719 ± 0,0114 |
 | Baseline de referência no teste | Logística balanceada: aproximadamente 0,308 | Logística balanceada com regra validada: 0,3777 |
 
-O critério original de **15% foi preservado** no notebook do colega. O critério de 10% e
+O critério original de **15% foi preservado** no notebook inicial do EDA. O critério de 10% e
 os resultados detalhados nas etapas 0–5 abaixo pertencem ao **protocolo complementar B**,
 que já havia sido executado antes da integração. A diferença entre os resultados A e B
 não é uma comparação controlada entre arquiteturas: mudam também split de validação,
-otimizador, seleção de época e regra de decisão. A integração apenas reúne código e
-evidências existentes; não executou novamente os testes nem os trata como uma nova
-avaliação independente em holdout.
-
-O resumo adicional no notebook principal apenas lê resultados salvos. Para reproduzir
-o protocolo B, execute o notebook de experimentos em uma sessão própria. Cada notebook
-usa células Python comuns, sem comandos personalizados ou execução de outro notebook.
+otimizador, seleção de época e regra de decisão.
 
 ### Equipe
 
@@ -490,8 +474,7 @@ não será usada para selecionar uma nova configuração a partir do teste.
 
 ### Síntese preliminar
 
-A conclusão do desenvolvimento original está preservada em
-[conclusao_classificacao.md](conclusao_classificacao.md) e dentro do notebook principal.
+A conclusão do desenvolvimento original está preservada dentro do notebook principal.
 Ela registra que o protocolo A não atingiu o ganho de 15%, com F1 macro médio aproximado
 **0,316 ± 0,021** nas três sementes. O ganho de aproximadamente 4,7% discutido naquele texto
 se refere ao modelo da semente 42; não foi confundido com a média das três sementes.
@@ -515,13 +498,6 @@ Com mais tempo, investigaríamos qualidade e consistência dos rótulos, carteir
 informação observada e novos atributos permitidos. Mudanças de modelo ou calibração
 precisariam de um novo planejamento de avaliação independente, sem reajustar decisões
 para melhorar os números do teste já utilizado.
-
-### Pendências para a versão final
-
-- Complementar a etapa 6, preservando os subgrupos já analisados pelo colega e incluindo piores exemplos e permutação.
-- Consolidar a conclusão dos protocolos A e B, sem atribuir seus números a um mesmo método.
-- Confirmar a origem e os termos de uso dos arquivos de dados.
-- Fazer a revisão final de reprodução e apresentação da entrega.
 
 ### Referências
 
