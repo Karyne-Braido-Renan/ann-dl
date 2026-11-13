@@ -1,0 +1,242 @@
+{
+  "selection_metric": "f1_macro_val",
+  "tie_break": [
+    "n_parameters",
+    "experiment_id"
+  ],
+  "shared_training": {
+    "learning_rate": 0.001,
+    "batch_size": 64,
+    "max_epochs": 200,
+    "patience": 20,
+    "min_delta": 0.0,
+    "weight_decay": 0.0,
+    "seed": 42,
+    "num_threads": 1,
+    "log_every": 10
+  },
+  "n_train": 11402,
+  "n_val": 3801,
+  "feature_names": [
+    "num__pct_stocks",
+    "num__pct_fixed_income",
+    "num__pct_repo",
+    "num__pct_investment_fund",
+    "num__pct_cash",
+    "num__pct_options",
+    "num__pct_treasure",
+    "num__pct_private_pension",
+    "num__pct_term",
+    "num__pct_coe",
+    "num__pct_real_estate",
+    "num__pct_structured_product",
+    "num__num_active_buckets",
+    "num__max_bucket_pct",
+    "cat__personType_F",
+    "cat__personType_J"
+  ],
+  "class_labels": [
+    "Conservadora",
+    "Moderada",
+    "Sofisticada"
+  ],
+  "class_weights": [
+    0.7718656659126282,
+    0.6314448714256287,
+    8.280319213867188
+  ],
+  "configurations": [
+    {
+      "experiment_id": "C01",
+      "hidden_dims": [
+        32,
+        16
+      ],
+      "arquitetura": "32/16",
+      "learning_rate": 0.001,
+      "regularizacao": "Nenhuma",
+      "dropout": 0.0,
+      "weight_decay": 0.0
+    },
+    {
+      "experiment_id": "C02",
+      "hidden_dims": [
+        32,
+        16
+      ],
+      "arquitetura": "32/16",
+      "learning_rate": 0.001,
+      "regularizacao": "Dropout",
+      "dropout": 0.2,
+      "weight_decay": 0.0
+    },
+    {
+      "experiment_id": "C03",
+      "hidden_dims": [
+        32,
+        16
+      ],
+      "arquitetura": "32/16",
+      "learning_rate": 0.001,
+      "regularizacao": "Weight decay",
+      "dropout": 0.0,
+      "weight_decay": 0.001
+    },
+    {
+      "experiment_id": "C04",
+      "hidden_dims": [
+        32,
+        16
+      ],
+      "arquitetura": "32/16",
+      "learning_rate": 0.001,
+      "regularizacao": "Dropout + weight decay",
+      "dropout": 0.2,
+      "weight_decay": 0.001
+    },
+    {
+      "experiment_id": "C05",
+      "hidden_dims": [
+        32,
+        16
+      ],
+      "arquitetura": "32/16",
+      "learning_rate": 0.0003,
+      "regularizacao": "Nenhuma",
+      "dropout": 0.0,
+      "weight_decay": 0.0
+    },
+    {
+      "experiment_id": "C06",
+      "hidden_dims": [
+        32,
+        16
+      ],
+      "arquitetura": "32/16",
+      "learning_rate": 0.0003,
+      "regularizacao": "Dropout",
+      "dropout": 0.2,
+      "weight_decay": 0.0
+    },
+    {
+      "experiment_id": "C07",
+      "hidden_dims": [
+        32,
+        16
+      ],
+      "arquitetura": "32/16",
+      "learning_rate": 0.0003,
+      "regularizacao": "Weight decay",
+      "dropout": 0.0,
+      "weight_decay": 0.001
+    },
+    {
+      "experiment_id": "C08",
+      "hidden_dims": [
+        32,
+        16
+      ],
+      "arquitetura": "32/16",
+      "learning_rate": 0.0003,
+      "regularizacao": "Dropout + weight decay",
+      "dropout": 0.2,
+      "weight_decay": 0.001
+    },
+    {
+      "experiment_id": "C09",
+      "hidden_dims": [
+        64,
+        32
+      ],
+      "arquitetura": "64/32",
+      "learning_rate": 0.001,
+      "regularizacao": "Nenhuma",
+      "dropout": 0.0,
+      "weight_decay": 0.0
+    },
+    {
+      "experiment_id": "C10",
+      "hidden_dims": [
+        64,
+        32
+      ],
+      "arquitetura": "64/32",
+      "learning_rate": 0.001,
+      "regularizacao": "Dropout",
+      "dropout": 0.2,
+      "weight_decay": 0.0
+    },
+    {
+      "experiment_id": "C11",
+      "hidden_dims": [
+        64,
+        32
+      ],
+      "arquitetura": "64/32",
+      "learning_rate": 0.001,
+      "regularizacao": "Weight decay",
+      "dropout": 0.0,
+      "weight_decay": 0.001
+    },
+    {
+      "experiment_id": "C12",
+      "hidden_dims": [
+        64,
+        32
+      ],
+      "arquitetura": "64/32",
+      "learning_rate": 0.001,
+      "regularizacao": "Dropout + weight decay",
+      "dropout": 0.2,
+      "weight_decay": 0.001
+    },
+    {
+      "experiment_id": "C13",
+      "hidden_dims": [
+        64,
+        32
+      ],
+      "arquitetura": "64/32",
+      "learning_rate": 0.0003,
+      "regularizacao": "Nenhuma",
+      "dropout": 0.0,
+      "weight_decay": 0.0
+    },
+    {
+      "experiment_id": "C14",
+      "hidden_dims": [
+        64,
+        32
+      ],
+      "arquitetura": "64/32",
+      "learning_rate": 0.0003,
+      "regularizacao": "Dropout",
+      "dropout": 0.2,
+      "weight_decay": 0.0
+    },
+    {
+      "experiment_id": "C15",
+      "hidden_dims": [
+        64,
+        32
+      ],
+      "arquitetura": "64/32",
+      "learning_rate": 0.0003,
+      "regularizacao": "Weight decay",
+      "dropout": 0.0,
+      "weight_decay": 0.001
+    },
+    {
+      "experiment_id": "C16",
+      "hidden_dims": [
+        64,
+        32
+      ],
+      "arquitetura": "64/32",
+      "learning_rate": 0.0003,
+      "regularizacao": "Dropout + weight decay",
+      "dropout": 0.2,
+      "weight_decay": 0.001
+    }
+  ]
+}

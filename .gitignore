@@ -3,3 +3,7 @@ env/
 .cache/
 .vscode/
 target/
+
+# Arquivos brutos usados pelos notebooks, mantidos apenas no ambiente local.
+/Dados/
+__pycache__/

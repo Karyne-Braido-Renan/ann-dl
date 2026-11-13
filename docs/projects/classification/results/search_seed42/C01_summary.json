@@ -1,0 +1,71 @@
+{
+  "result": {
+    "experiment_id": "C01",
+    "hidden_dims": [
+      32,
+      16
+    ],
+    "arquitetura": "32/16",
+    "learning_rate": 0.001,
+    "regularizacao": "Nenhuma",
+    "dropout": 0.0,
+    "weight_decay": 0.0,
+    "seed": 42,
+    "n_parameters": 1123,
+    "best_epoch": 29,
+    "epochs_run": 49,
+    "stopped_early": true,
+    "duration_seconds": 23.295689499995206,
+    "f1_macro_treino": 0.39286971775218743,
+    "f1_macro_val": 0.3828876246635297,
+    "diferenca_treino_val": 0.009982093088657717,
+    "val_loss": 1.0849649906158447,
+    "acuracia_val": 0.4975006577216522,
+    "recall_sofisticada_val": 0.20261437908496732,
+    "f1_sofisticada_val": 0.1082024432809773
+  },
+  "training": {
+    "learning_rate": 0.001,
+    "batch_size": 64,
+    "max_epochs": 200,
+    "patience": 20,
+    "min_delta": 0.0,
+    "weight_decay": 0.0,
+    "seed": 42,
+    "num_threads": 1,
+    "log_every": 0
+  },
+  "classification_report_val": {
+    "Conservadora": {
+      "precision": 0.5124617402710975,
+      "recall": 0.7137637028014616,
+      "f1-score": 0.5965894629676762,
+      "support": 1642.0
+    },
+    "Moderada": {
+      "precision": 0.6288848263254113,
+      "recall": 0.34297108673978066,
+      "f1-score": 0.44387096774193546,
+      "support": 2006.0
+    },
+    "Sofisticada": {
+      "precision": 0.07380952380952381,
+      "recall": 0.20261437908496732,
+      "f1-score": 0.1082024432809773,
+      "support": 153.0
+    },
+    "accuracy": 0.4975006577216522,
+    "macro avg": {
+      "precision": 0.4050520301353442,
+      "recall": 0.4197830562087365,
+      "f1-score": 0.3828876246635297,
+      "support": 3801.0
+    },
+    "weighted avg": {
+      "precision": 0.5562478285390092,
+      "recall": 0.4975006577216522,
+      "f1-score": 0.4963325528295807,
+      "support": 3801.0
+    }
+  }
+}

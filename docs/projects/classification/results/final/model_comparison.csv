@@ -1,0 +1,21 @@
+model,metric,mean,std,n
+MLP (3 sementes),accuracy,0.4973252652810664,0.013610442088394882,3
+MLP (3 sementes),f1_macro,0.37190348766136644,0.011402074113936327,3
+MLP (3 sementes),roc_auc_macro_ovr,0.5984398453067982,0.0033947329821712767,3
+MLP (3 sementes),pr_auc_macro_trapezoidal,0.39889278044557397,0.0014397077735600191,3
+MLP (3 sementes),average_precision_macro,0.3961080094474156,0.000970298743579382,3
+Dummy majoritário,accuracy,0.5277558537227045,,1
+Dummy majoritário,f1_macro,0.2302967682681821,,1
+Dummy majoritário,roc_auc_macro_ovr,0.5,,1
+Dummy majoritário,pr_auc_macro_trapezoidal,0.6666666666666666,,1
+Dummy majoritário,average_precision_macro,0.3333333333333333,,1
+Logística,accuracy,0.5453827940015785,,1
+Logística,f1_macro,0.3643030967304777,,1
+Logística,roc_auc_macro_ovr,0.6083629237849557,,1
+Logística,pr_auc_macro_trapezoidal,0.40938446994664557,,1
+Logística,average_precision_macro,0.4054513340747421,,1
+Logística balanceada,accuracy,0.5438042620363063,,1
+Logística balanceada,f1_macro,0.3777118001039132,,1
+Logística balanceada,roc_auc_macro_ovr,0.5992410885963207,,1
+Logística balanceada,pr_auc_macro_trapezoidal,0.39635698018179033,,1
+Logística balanceada,average_precision_macro,0.3933068122497265,,1

@@ -1,0 +1,98 @@
+{
+  "sha256": "5b016135cbda7d124f81074d522277469e16bea07d5a1185b34a47ee1bc1deab",
+  "frozen_at_utc": "2026-11-13T17:22:17.074950+00:00",
+  "protocol": {
+    "selected_configuration": {
+      "experiment_id": "C01",
+      "hidden_dims": [
+        32,
+        16
+      ],
+      "arquitetura": "32/16",
+      "learning_rate": 0.001,
+      "regularizacao": "Nenhuma",
+      "dropout": 0.0,
+      "weight_decay": 0.0
+    },
+    "final_epochs": 29,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "representative_seed": 42,
+    "learning_rate": 0.001,
+    "batch_size": 64,
+    "decision_rules": {
+      "MLP": [
+        1.0,
+        1.0,
+        0.75
+      ],
+      "Dummy majoritário": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Logística": [
+        1.0,
+        0.75,
+        1.0
+      ],
+      "Logística balanceada": [
+        1.0,
+        1.0,
+        0.5
+      ]
+    },
+    "decision_objective": "F1 macro, sem matriz de custos de negócio",
+    "protect_conservative": false,
+    "baseline_selected_on_validation": "Logística balanceada",
+    "criterion": "mean F1 macro of three MLP seeds >= 1.10 * validation-selected baseline F1 macro on the same test",
+    "success_factor": 1.1,
+    "n_train_final": 15203,
+    "n_holdout": 3801,
+    "class_labels": [
+      "Conservadora",
+      "Moderada",
+      "Sofisticada"
+    ],
+    "feature_names": [
+      "num__pct_stocks",
+      "num__pct_fixed_income",
+      "num__pct_repo",
+      "num__pct_investment_fund",
+      "num__pct_cash",
+      "num__pct_options",
+      "num__pct_treasure",
+      "num__pct_private_pension",
+      "num__pct_term",
+      "num__pct_coe",
+      "num__pct_real_estate",
+      "num__pct_structured_product",
+      "num__num_active_buckets",
+      "num__max_bucket_pct",
+      "cat__personType_F",
+      "cat__personType_J"
+    ],
+    "class_weights_final": [
+      0.7718042731285095,
+      0.6314849257469177,
+      8.280501365661621
+    ],
+    "source_files_sha256": {
+      "account.json": "dad4054667c81715cf2059b2fde2c7cc86a79b217a5c720806257817b9f783c5",
+      "clientes_investment_policy.json": "5dd050f705fe8c4e929e58f0e960cec6e785e9e86bc88f60006e0c5a145c12c2",
+      "clientes_wallet_distribution.json": "c83efdd2d8883e1e982da835ff5fa5358e98946b485ec59d109859e81f27d136"
+    },
+    "outer_train_indices_sha256": "7125795664c00538fc2b096a6da09b74ba771d0214dc75e848e3602ca520d98a",
+    "holdout_indices_sha256": "95155a6a138a60f1a69ff1a678b20a541a5593f1d4c0dcf7a6647e59dcc22a9e",
+    "software": {
+      "python": "3.12.10",
+      "torch": "2.15.0+cpu",
+      "sklearn": "1.9.1",
+      "numpy": "2.5.3",
+      "pandas": "3.0.6"
+    }
+  }
+}
